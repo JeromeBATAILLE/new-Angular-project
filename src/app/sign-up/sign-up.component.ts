@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignUpComponent implements OnInit {
 
+  public info: string;
+
   constructor() { }
 
   ngOnInit() {
+    this.info = "Empty!!";
   }
 
 }
