@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row d-flex justify-content-center">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" [src]="User.photo" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Nom : {{ User.name }}</h5>
+        <h5 class="card-title">Prénom : {{ User.firstName }}</h5>
+        <p class="card-text">{{ User.quote }}</p>
+        <input type="text" name="text" [(ngModel)]="User.quote">
+        <button type="button" class="age btn btn-danger" disabled *ngIf="User.showAge">{{ User.age }}</button>
+        <a href="#" class="btn btn-primary" (click)="togglAge()">Afficher/Masquer mon âge</a>
+      </div>
+    </div>
+  </div>
+</div>
